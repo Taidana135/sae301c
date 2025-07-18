@@ -1,0 +1,210 @@
+/* ====== CONTAINER PRINCIPAL ====== */
+#section_general {
+  background-color: #F3F3E8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: first baseline;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* ====== SECTION FORMULAIRE ====== */
+#section_login {
+  background-color: #fff;
+  max-width: 500px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #234c4c;
+}
+
+/* ====== TITRE ====== */
+#section_login h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #4aa4a4;
+  margin-bottom: 25px;
+}
+
+/* ====== CHAMPS DE SAISIE ====== */
+.inputbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  left: 10px;
+  color: #4aa4a4;
+  font-size: 1.2rem;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgba(222, 217, 40, 0.05);
+  transition: border 0.3s ease;
+}
+
+.inputbox input:focus {
+  border-color: #4aa4a4;
+  outline: none;
+}
+
+.inputbox label {
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  color: #777;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.inputbox input:focus + label,
+.inputbox input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 30px;
+  background-color: #fff;
+  padding: 0 4px;
+  font-size: 0.75rem;
+  color: #4aa4a4;
+}
+
+/* ====== MESSAGES ====== */
+#error, #success {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* ====== LIENS ET OPTIONS ====== */
+.forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.forget a {
+  text-decoration: none;
+  color: #4aa4a4;
+  font-weight: bold;
+}
+
+.forget a:hover {
+  color: #7CB518;
+}
+
+/* ====== BOUTON DE CONNEXION ====== */
+button[name="btn-submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4aa4a4;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[name="btn-submit"]:hover {
+  background-color: #7CB518;
+  transform: scale(1.03);
+}
+
+/* ====== INSCRIPTION ====== */
+.register {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.register a {
+  color: #4aa4a4;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 600px) {
+  #section_login {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #section_login h1 {
+    font-size: 1.5rem;
+  }
+
+  button[name="btn-submit"] {
+    font-size: 0.95rem;
+  }
+
+  .forget {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+/* ====== PAGE MOT DE PASSE OUBLIÉ ====== */
+#section_login h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #4aa4a4;
+  margin-bottom: 25px;
+}
+
+/* Pour input identifiant universitaire */
+.inputbox input[type="int"] {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 2px solid #4aa4a4;
+  background-color: rgba(222, 217, 40, 0.05);
+  transition: border 0.3s ease;
+
+}
+
+.inputbox input[type="int"]:focus {
+  border-color: #4aa4a4;
+  outline: none;
+}
+/* ====== BOUTON ENVOYER (Mot de passe oublié) ====== */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4aa4a4;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+form button:hover {
+  background-color: #7CB518;
+  transform: scale(1.03);
+}

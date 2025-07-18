@@ -1,0 +1,89 @@
+/* ========== GÉNÉRAL ========== */
+body {
+  background-color: #F3F3E8;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #234c4c;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  font-size: 1.6rem;
+  color: #4aa4a4;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2F5233;
+}
+
+/* ========== FORMULAIRE ========== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2F5233;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 1rem;
+  background-color: rgba(222, 217, 40, 0.1);
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4aa4a4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #7CB518;
+  transform: scale(1.05);
+}
+
+/* ========== MESSAGES ========== */
+.container p:first-child {
+  color: #ba3636;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="submit"] {
+    font-size: 0.9rem;
+  }
+}

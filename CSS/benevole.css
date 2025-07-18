@@ -1,0 +1,107 @@
+/* ============================================================
+   === FORMULAIRE BÉNÉVOLE ===
+============================================================ */
+
+form {
+  width: 90%;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(222, 217, 40, 0.1);
+  border: 2px solid #ded928;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #234c4c;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #234c4c;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2F5233;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fdfdf5;
+  transition: box-shadow 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(122, 177, 177, 0.7);
+}
+
+form select {
+  margin-top: 0.5rem;
+  background-color: #fffbe9;
+}
+
+form input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+form .checkbox-group label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+form p,
+form small {
+  font-size: 0.9rem;
+  color: #234c4c;
+  margin-top: 1.5rem;
+}
+
+form input[type="submit"] {
+  margin-top: 2rem;
+  background-color: #7CB518;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input[type="submit"]:hover {
+  background-color: #5c9210;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  form {
+    padding: 1.5rem;
+  }
+}
+h1 {
+  text-align: center ;
+  color: #234c4c;
+}

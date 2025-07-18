@@ -1,0 +1,180 @@
+/* ========== GÉNÉRAL ========== */
+body {
+  background-color: #F3F3E8;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #234c4c;
+  padding: 30px 10px;
+  line-height: 1.4;
+}
+
+/* ========== TITRES ========== */
+h2.titre {
+  font-size: 1.5rem;
+  color: #4aa4a4;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ========== BOUTON CHANGER DE TABLE ========== */
+.bouton_table {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bouton_table input[type="submit"] {
+  background-color: #ded928;
+  border: 2px solid #234c4c;
+  color: #234c4c;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.bouton_table input[type="submit"]:hover {
+  background-color: #f0e04e;
+  transform: scale(1.03);
+}
+
+/* ========== BLOC CRÉATION ========== */
+.objet {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  /* background-color: #ffffff; */
+  padding: 20px;
+  border-radius: 20px;
+  /* border: 2px solid #ded928; */
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05); */
+}
+
+.objet label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #2F5233;
+}
+
+.objet input[type="text"] {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  background-color: rgba(222, 217, 40, 0.05);
+}
+
+.objet input[type="submit"] {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #4aa4a4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.objet input[type="submit"]:hover {
+  background-color: #7CB518;
+  transform: scale(1.02);
+}
+
+/* ========== CONTENEUR DES HORAIRES EXISTANTS ========== */
+.conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ========== FORMULAIRES D'ÉDITION ========== */
+form.d-inline-block {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #ded928;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  width: 260px;
+  box-sizing: border-box;
+}
+
+form.d-inline-block label {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #2F5233;
+}
+
+form.d-inline-block input[type="text"] {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  font-size: 0.85rem;
+  background-color: rgba(222, 217, 40, 0.05);
+}
+
+form.d-inline-block input[type="submit"] {
+  margin-top: 12px;
+  padding: 8px;
+  background-color: #4aa4a4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+form.d-inline-block input[type="submit"]:hover {
+  background-color: #7CB518;
+  transform: scale(1.02);
+}
+
+/* ========== BOUTON SUPPRIMER ========== */
+a button {
+  background-color: #ba3636;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a button:hover {
+  background-color: #a72828;
+  transform: scale(1.02);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .conteneur {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .objet {
+    padding: 15px;
+  }
+
+  form.d-inline-block {
+    padding: 12px;
+    width: 100%;
+    max-width: 95%;
+  }
+}

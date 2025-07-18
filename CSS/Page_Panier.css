@@ -1,0 +1,223 @@
+/* ============================================================
+   === PAGE PANIER (Design harmonisé avec le catalogue) ===
+============================================================ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: #F3F3E8;
+  color: #234c4c;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+header {
+  background-color: #F3F3E8;
+  padding: 1rem 2rem;
+  border-bottom: 3px solid #ded928;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-logo-titre {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  height: 60px;
+}
+header h2 {
+  margin: 0;
+  color: #2F5233;
+}
+.header-horaires {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #234c4c;
+}
+.btn-nav {
+  margin-left: 1rem;
+  background-color: #ded928;
+  color: #234c4c;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn-nav:hover {
+  background-color: #7CB518;
+  color: white;
+}
+
+/* ------------------------------
+   SECTION PANIER
+------------------------------ */
+#panier {
+  padding: 2rem;
+  position: relative;
+  min-height: 70vh;
+}
+
+/* Compteur panier */
+.btn-panier {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background: #2F5233;
+  color: #F3F3E8;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-panier:hover {
+  background-color: #7CB518;
+}
+
+/* Titre */
+#panier h1 {
+  font-size: 2.2rem;
+  color: #2F5233;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Bouton retour */
+.btn-retour {
+  display: block;
+  margin: 0 auto 2rem auto;
+  background-color: #ded928;
+  color: #234c4c;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: center;
+  width: max-content;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn-retour:hover {
+  background-color: #7CB518;
+  color: white;
+}
+
+/* Tableau */
+#panier table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+#panier thead {
+  background-color: #ded928;
+  color: #234c4c;
+  font-weight: bold;
+}
+#panier th, #panier td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #7CB518;
+  text-align: center;
+}
+#panier tbody tr:hover {
+  background-color: #e8f5d7;
+}
+
+/* Boutons actions panier */
+#panier button {
+  background-color: #2F5233;
+  color: #F3F3E8;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#panier button:hover {
+  background-color: #7CB518;
+}
+
+/* Supprimer */
+.btn-supprimer {
+  background-color: #c44c4c;
+  padding: 0.4rem 0.8rem;
+}
+.btn-supprimer:hover {
+  background-color: #9c3838;
+}
+
+/* Vider panier */
+.btn-vider {
+  background-color: #c44c4c;
+}
+.btn-vider:hover {
+  background-color: #9c3838;
+}
+
+/* Réserver panier */
+.btn-reserver {
+  background-color: #2F5233;
+}
+.btn-reserver:hover {
+  background-color: #7CB518;
+}
+
+/* Conteneur boutons d'action */
+.panier-actions {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Panier vide */
+.panier-vide {
+  text-align: center;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+  background-color: #234c4c;
+  color: #F3F3E8;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 600px) {
+  #panier table, #panier th, #panier td {
+    font-size: 0.9rem;
+  }
+
+  .btn-retour, 
+  #panier button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Image produit dans le panier */
+#panier .img-produit {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

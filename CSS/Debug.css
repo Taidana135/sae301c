@@ -1,0 +1,17 @@
+pre {
+  background-color: black;
+  color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  overflow: auto;
+  padding: 1em;
+  white-space: pre-wrap;
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 0;
+  width: 50%;
+  max-height: 50vh; /* Limite la hauteur à la moitié de l'écran */
+  z-index: 1000;
+}

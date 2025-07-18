@@ -1,0 +1,85 @@
+/* ========== BOUTON CHANGEMENT DE TABLE ========== */
+.bouton_table {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bouton_table input[type="submit"] {
+  background-color: #ded928;
+  border: 2px solid #234c4c;
+  color: #234c4c;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.bouton_table input[type="submit"]:hover {
+  background-color: #f0e04e;
+  transform: scale(1.03);
+}
+
+/* Structure générale des formulaires */
+form.d-inline-block,
+form.bouton_table {
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Harmonisation des fieldset et titre */
+form fieldset {
+  border:#ded928 2px solid;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: #ccc 0px 0px 10px;
+    background-color: #f3f3e8;
+}
+
+form .titre {
+  color: #234c4c;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Labels et inputs */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #234c4c;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f3f3e8;
+  font-size: 1rem;
+}
+
+/* Boutons uniformes */
+form input[type="submit"],
+form button {
+  background-color:#4aa4a4;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: bold;
+  color:#f3f3e8;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: #7CB518;
+  transform: scale(1.05);
+}

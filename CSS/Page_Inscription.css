@@ -1,0 +1,133 @@
+/* ====== CONTAINER PRINCIPAL ====== */
+.container-inscription {
+  background-color:#F3F3E8;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #234c4c;
+}
+
+/* ====== TITRE ET TEXTE ====== */
+.titre-inscription {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #4aa4a4;
+  margin-bottom: 10px;
+}
+
+.texte-inscription {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #2F5233;
+}
+
+/* ====== LIEN DE RETOUR ====== */
+.btn-retour-accueil {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #4aa4a4;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.btn-retour-accueil:hover {
+  color: #7CB518;
+}
+
+/* ====== FORMULAIRE ====== */
+.form-inscription {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-inscription {
+  padding: 10px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgba(222, 217, 40, 0.05);
+  transition: border 0.3s ease;
+}
+
+.input-inscription:focus {
+  border-color: #4aa4a4;
+  outline: none;
+}
+
+/* ====== CHECKBOXES ====== */
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-inscription {
+  font-size: 0.85rem;
+  color: #2F5233;
+}
+
+/* ====== BOUTON ====== */
+.btn-inscription {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #4aa4a4;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-inscription:hover {
+  background-color: #7CB518;
+  transform: scale(1.03);
+}
+
+/* ====== FOOTER ====== */
+.footer-inscription {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-inscription a {
+  color: #4aa4a4;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.footer-inscription a:hover {
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 600px) {
+  .container-inscription {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .titre-inscription {
+    font-size: 1.5rem;
+  }
+
+  .btn-inscription {
+    font-size: 0.95rem;
+  }
+
+  .checkbox-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

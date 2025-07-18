@@ -1,0 +1,129 @@
+/* ========== GÉNÉRAL ========== */
+body {
+  background-color: #F3F3E8;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #234c4c;
+  padding: 20px;
+}
+
+h2.titre {
+  font-size: 1.6rem;
+  color: #4aa4a4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ========== FORMULAIRES ========== */
+form fieldset {
+  border: 2px solid #ded928;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2F5233;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 1rem;
+  background-color: rgba(222, 217, 40, 0.1);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+input[type="submit"],
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #4aa4a4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #7CB518;
+  transform: scale(1.05);
+}
+
+/* ========== BOUTON CHANGEMENT DE TABLE ========== */
+.bouton_table {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bouton_table input[type="submit"] {
+  background-color: #ded928;
+  border: 2px solid #234c4c;
+  color: #234c4c;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.bouton_table input[type="submit"]:hover {
+  background-color: #f0e04e;
+  transform: scale(1.03);
+}
+
+/* ========== CONTAINER DES FORMULAIRES MODIFIABLES ========== */
+.conteneur {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* ========== BOUTON SUPPRIMER ========== */
+a button {
+  background-color: #ba3636;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+a button:hover {
+  background-color: #a72828;
+  transform: scale(1.05);
+}
+
+/* ========== RÉPONSIVE ========== */
+@media (max-width: 600px) {
+  form fieldset {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  textarea,
+  select {
+    font-size: 0.9rem;
+  }
+
+  input[type="submit"],
+  button {
+    font-size: 0.9rem;
+  }
+}
